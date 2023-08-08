@@ -32,17 +32,18 @@
     1. `git clone https://github.com/eigentourist/defcon31-setup.git`
     2. `cd ~/defcon31-setup`
     3. `./setup.sh`
-14. The setup script can take some time to run, depending on how many cores and how much memory is given to the VM. Once the script finishes, run `./launch.sh` to launch QEMU and boot up Raspberry Pi OS
-15. Once the login prompt for Raspberry Pi OS appears, open another terminal window and run:
+14. The setup script can take some time to run, depending on how many cores and how much memory is given to the VM. Once the script finishes, run `./launch.sh` to launch QEMU and boot up Raspberry Pi OS.
+15. A couple of services will likely fail during Raspberry Pi OS startup, specifically those that are trying to check the device's EPROM and serial UART - this is normal, as we don't actually have a physical Raspberry Pi, and QEMU is emulating most, but not quite all, of the Raspberry Pi hardware.
+16. Once the login prompt for Raspberry Pi OS appears, open another terminal window and run:
     - `cd ~/defcon31-setup`
     - `./connect.sh`
-16. When the login prompt appears in the second terminal window, it should already have the default user `Pi` entered. Type `raspberry` at the password prompt.
-17. Raspberry Pi OS will complain about SSH being enabled and the default password for the 'Pi' user not being changed, followed by giving you the shell prompt.
-18. At the Raspberry Pi shell prompt, type `git clone https://github.com/eigentourist/defcon31.git`
-19. Two of the code examples need the *ncurses* library, so type `sudo apt install libncurses-dev` at the shell prompt.
-20. When ready to shut down the Raspberry Pi, type `sudo shutdown now -h` at the Raspberry Pi OS shell prompt. This should log you out and start the shutdown process for the QEMU VM. The first terminal window should show the shutdown process and eventually exit back to the Kali Linux shell.
+17. When the login prompt appears in the second terminal window, it should already have the default user `Pi` entered. Type `raspberry` at the password prompt.
+18. Raspberry Pi OS will complain about SSH being enabled and the default password for the 'Pi' user not being changed, followed by giving you the shell prompt.
+19. At the Raspberry Pi shell prompt, type `git clone https://github.com/eigentourist/defcon31.git`
+20. Two of the code examples need the *ncurses* library, so type `sudo apt install libncurses-dev` at the shell prompt.
+21. When ready to shut down the Raspberry Pi, type `sudo shutdown now -h` at the Raspberry Pi OS shell prompt. This should log you out and start the shutdown process for the QEMU VM. The first terminal window should show the shutdown process and eventually exit back to the Kali Linux shell.
 
 ## Some considerations about this setup
-- This is a heavier setup than previous Hacking The Metal workshops at Def Con, mainly because we're emulating a non-Intel machine
+- This is a heavier setup than previous Hacking The Metal workshops at Def Con, mainly because we're emulating a non-Intel machine -- the decision to do this came after a great deal of thought and angst, and it seemed like the best set of tradeoffs available at the current time
 - If you can manage to give the VirtualBox VM 4 processors and 8gb of RAM, your experience of running a VM *within* a VM will likely be smoother
 - *One* of these programs -- namely, d2a, which is built by running `build-distance2d-asm.sh`, crashes when run. Not to worry, this is deliberate.
