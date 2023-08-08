@@ -5,7 +5,7 @@
 
 
 ---
-### Below are instructions for setting up the environment used to edit, build and run the code in the *defcon31* repository.
+### Below are instructions for setting up the environment used to edit, build and run the code in the *defcon31* repository. There is also a [Discord server available here.](https://discord.gg/pzAQ3Qhxu)
 
 
 1. Download & install VirtualBox (https://www.virtualbox.org/wiki/Downloads)
