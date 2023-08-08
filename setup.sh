@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -e   # stop on error
+set -x   # echo on
+
 # Create working directory and switch to it
 mkdir ~/defcon31
 cd ~/defcon31
