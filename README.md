@@ -41,7 +41,8 @@
 18. Raspberry Pi OS will complain about SSH being enabled and the default password for the 'Pi' user not being changed, followed by giving you the shell prompt.
 19. At the Raspberry Pi shell prompt, type `git clone https://github.com/eigentourist/defcon31.git`
 20. Two of the code examples need the *ncurses* library, so type `sudo apt install libncurses-dev` at the shell prompt.
-21. When ready to shut down the Raspberry Pi, type `sudo shutdown now -h` at the Raspberry Pi OS shell prompt. This should log you out and start the shutdown process for the QEMU VM. The first terminal window should show the shutdown process and eventually exit back to the Kali Linux shell.
+21. We could use a bit of extra editor functionality, so type `sudo apt install vim` at the shell prompt.
+22. When ready to shut down the Raspberry Pi, type `sudo shutdown now -h` at the Raspberry Pi OS shell prompt. This should log you out and start the shutdown process for the QEMU VM. The first terminal window should show the shutdown process and eventually exit back to the Kali Linux shell.
 
 ## Some considerations about this setup
 - This is a heavier setup than previous Hacking The Metal workshops at Def Con, mainly because we're emulating a non-Intel machine -- the decision to do this came after a great deal of thought and angst, and it seemed like the best set of tradeoffs available at the current time
