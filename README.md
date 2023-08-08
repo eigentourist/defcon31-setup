@@ -9,8 +9,8 @@
 
 
 1. Download & install VirtualBox (https://www.virtualbox.org/wiki/Downloads)
-2. Download Kali VirtualBox (https://cdimage.kali.org/kali-2023.2/kali-linux-2023.2-virtualbox-amd64.7z)
-3. Uncompress VM image (you may need 7-zip) add to VirtualBOx, and tune for your machine.
+2. Download Kali VirtualBox image (https://cdimage.kali.org/kali-2023.2/kali-linux-2023.2-virtualbox-amd64.7z)
+3. Uncompress VM image (you may need 7-zip) add to VirtualBox, and tune for your machine.
 4. Launch VM from VirtualBox
 5. Log in as user `kali`, password `kali`
 6. Once logged in, launch terminal window and run the following commands. Note: if you get an alert box asking to restart services during package upgrades without asking, just answer Yes and move on.
