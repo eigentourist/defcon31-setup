@@ -41,3 +41,8 @@
 18. At the Raspberry Pi shell prompt, type `git clone https://github.com/eigentourist/defcon31.git`
 19. Two of the code examples need the *ncurses* library, so type `sudo apt install libncurses-dev` at the shell prompt.
 20. When ready to shut down the Raspberry Pi, type `sudo shutdown now -h` at the Raspberry Pi OS shell prompt. This should log you out and start the shutdown process for the QEMU VM. The first terminal window should show the shutdown process and eventually exit back to the Kali Linux shell.
+
+## Some considerations about this setup
+- This is a heavier setup than previous Hacking The Metal workshops at Def Con, mainly because we're emulating a non-Intel machine
+- If you can manage to give the VirtualBox VM 4 processors and 8gb of RAM, your experience of running a VM *within* a VM will likely be smoother
+- *One* of these programs -- namely, d2a, which is built by running `build-distance2d-asm.sh`, crashes when run. Not to worry, this is deliberate.
