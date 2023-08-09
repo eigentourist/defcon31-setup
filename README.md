@@ -45,6 +45,6 @@
 22. When ready to shut down the Raspberry Pi, type `sudo shutdown now -h` at the Raspberry Pi OS shell prompt. This should log you out and start the shutdown process for the QEMU VM. The first terminal window should show the shutdown process and eventually exit back to the Kali Linux shell.
 
 ## Some considerations about this setup
-- This is a heavier setup than previous Hacking The Metal workshops at Def Con, mainly because we're emulating a non-Intel machine -- the decision to do this came after a great deal of thought and angst, and it seemed like the best set of tradeoffs available at the current time
-- If you can manage to give the VirtualBox VM 4 processors and 8gb of RAM, your experience of running a VM *within* a VM will likely be smoother
+- This is a heavier setup than previous Hacking The Metal workshops at Def Con, mainly because we're emulating a non-Intel machine -- the decision to do a setup that is basically a VM within a VM came after a great deal of thought and angst, and it seemed like the best set of tradeoffs available at the current time.
+- If you can manage to give the VirtualBox VM 4 processors and 8gb of RAM, your experience will likely be smoother.
 - *One* of these programs -- namely, d2a, which is built by running `build-distance2d-asm.sh`, crashes when run. Not to worry, this is deliberate.
