@@ -22,7 +22,7 @@
 9. Install VirtualBox Guest Additions Disk (VM Devices Menu > Insert Guest Additions CD Image)
 10. Right-click VBox_GAs CD icon in VM desktop, select `Mount Volume`
 11. In terminal window, run:
-    1. `cp -R /media/kali/VBox_GAs_7.0.8 ~/`
+    1. `cp -R /media/kali/VBox_GAs_7.0.8 ~/` (Note: 7.0.8 may have already changed, so just match the version number you find)
     2. `cd ~/VBox_GAs_7.0.8`
     3. `sudo ./VBoxLinuxAdditions.run`
     4. Type `yes` at `Do you wish to continue?`
