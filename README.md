@@ -18,7 +18,7 @@
     2. `sudo apt upgrade`
     3. `sudo reboot`
 7. Log in after restart (user `kali`, pwd `kali`)
-8. Launch terminal window and run the following: `sudo apt-get install –y linux-headers-$(uname -r)`
+8. Launch terminal window and run the following: `sudo apt-get install linux-headers-$(uname -r)`
 9. Install VirtualBox Guest Additions Disk (VM Devices Menu > Insert Guest Additions CD Image)
 10. Right-click VBox_GAs CD icon in VM desktop, select `Mount Volume`
 11. In terminal window, run:
