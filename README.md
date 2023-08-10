@@ -15,7 +15,7 @@
 5. Log in as user `kali`, password `kali`
 6. Once logged in, launch terminal window and run the following commands. Note: if you get an alert box asking to restart services during package upgrades without asking, just answer Yes and move on.
     1. `sudo apt update`
-    2. `sudo apt upgrade -y`
+    2. `sudo apt upgrade`
     3. `sudo reboot`
 7. Log in after restart (user `kali`, pwd `kali`)
 8. Launch terminal window and run the following: `sudo apt-get install –y linux-headers-$(uname -r)`
